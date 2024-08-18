@@ -11,6 +11,7 @@ python = "^3.10"
 pandas = "^2.2.2"
 streamlit = "^1.37.1"
 pydeck = "^0.9.1"
+ruff = "^0.6.1"
 
 
 [build-system]
