@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "detective"
+version = "0.1.0"
+description = "A \"detective for a day\"-like online case using AI"
+authors = ["Eshwaran Venkat <eshwaranv98@berkeley.edu>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+streamlit = "^1.37.1"
+pydeck = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
