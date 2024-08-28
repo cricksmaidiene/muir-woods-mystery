@@ -6,7 +6,7 @@ import os
 import json
 import pandas as pd
 
-from detective.data.muir_woods_geography.victim_sites import victim_death_locations
+from detective.data.muir_woods_geography.victims import victim_death_locations
 
 
 GEOGRAPHY_GEOJSON_PATH: str = "src/detective/data/muir_woods_geography"

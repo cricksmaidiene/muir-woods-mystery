@@ -5,28 +5,29 @@ from detective.config import PHASE_2_UNLOCKED
 muir_woods_about = st.Page(
     "case/muir_woods/about.py",
     title="About",
-    icon=":material/face:",
+    icon=":material/info:",
 )
 muir_woods_geography = st.Page(
     "case/muir_woods/geography.py",
     title="Geography",
-    icon=":material/face:",
+    icon=":material/public:",
 )
 muir_woods_surroundings = st.Page(
     "case/muir_woods/surroundings.py",
     title="Surroundings",
-    icon=":material/face:",
+    icon=":material/place:",
 )
 muir_woods_victim_profiles = st.Page(
     "case/muir_woods/victim_profiles.py",
     title="Victim Profiles",
-    icon=":material/face:",
+    icon=":material/person_search:",
 )
-muir_woods_victim_arcs = st.Page(
-    "case/muir_woods/victim_arcs.py",
-    title="Victim Arcs",
-    icon=":material/face:",
+muir_woods_news = st.Page(
+    "case/muir_woods/news.py",
+    title="News",
+    icon=":material/article:",
 )
+
 
 
 gambolini_family_profiles = st.Page(
@@ -41,7 +42,7 @@ MUIR_WOODS_DIRECTORY: dict[str, list] = {
         muir_woods_surroundings,
         muir_woods_geography,
         muir_woods_victim_profiles,
-        muir_woods_victim_arcs,
+        muir_woods_news,
     ],
 }
 GAMBOLINI_DIRECTORY: dict[str, list] = {"Gambolini Family": [gambolini_family_profiles]}
