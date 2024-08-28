@@ -23,6 +23,7 @@
 - **Belongings**. The following were found on his person:
   - A small device, about the size of a deck of cards with buttons each labeled with obscure numerical ranges, and a small LED indicator light that flashes intermittently. The front face features a single, recessed button. On the back, there’s a retractable antenna. It emits a buzz that seems to cause network interference. Signs of wear suggesting it’s been used multiple times.
   - A note with cryptic instructions, partially obscured by water damage and tears. The note mentions a meeting at an overlook. The handwriting is difficult to decipher, but the note appears to be a set of instructions or a coded message.
+  - An empty syringe, laced with residue of the same poisonous substance found in Tony Bergenthal's deceased body.
 
 ## Known Patterns & Habits
 
