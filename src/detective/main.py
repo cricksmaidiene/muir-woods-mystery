@@ -29,7 +29,6 @@ muir_woods_news = st.Page(
 )
 
 
-
 gambolini_family_profiles = st.Page(
     "case/gambolini_family/family_profiles.py",
     title="Gambolini Family Profiles",
@@ -37,7 +36,7 @@ gambolini_family_profiles = st.Page(
 )
 
 MUIR_WOODS_DIRECTORY: dict[str, list] = {
-    "Muir Woods Homicides": [
+    "Muir Woods Mystery": [
         muir_woods_about,
         muir_woods_surroundings,
         muir_woods_geography,

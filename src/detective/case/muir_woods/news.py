@@ -8,7 +8,7 @@ with st.expander("### Internet Troll Takes Center Stage Amid Muir Woods Mystery"
     with open("src/detective/docs/muir_woods/news/internet_troll.md", "r") as f:
         st.markdown(f.read())
 
-with st.expander("### Start-up Duo Raises $500M Pre-Seed for Revolutionary 'Cloud Farming'"):
+with st.expander("### Start-up Duo Raises $20M Pre-Seed for Revolutionary 'Cloud Farming'"):
     st.image("src/detective/data/news/kelvin_mateo.jpg")
 
     with open("src/detective/docs/muir_woods/news/startup.md", "r") as f:
