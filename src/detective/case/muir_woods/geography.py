@@ -125,7 +125,5 @@ st.caption("""
     Over the years, several wealthy families (billionaire status) have built estates on the outskirts of the conservatory, 
     taking advantage of the seclusion and natural beauty. 
     These estates are often hidden from view, accessible only by private roads that wind through the dense forest.
-    We've not carried out any inquiries at the estates if they heard / saw anything about the deaths yet. 
-    We do know that the Bergenthal pines are unrelated and a separate family to the victims.
-    Estates are unmarked on the map.
+    We've not carried out any inquiries at the estates if they heard / saw anything about the deaths yet. Estates are unmarked on the map.
 """)
