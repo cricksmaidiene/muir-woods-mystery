@@ -12,11 +12,6 @@ muir_woods_geography = st.Page(
     title="Geography",
     icon=":material/public:",
 )
-muir_woods_surroundings = st.Page(
-    "case/muir_woods/surroundings.py",
-    title="Surroundings",
-    icon=":material/place:",
-)
 muir_woods_victim_profiles = st.Page(
     "case/muir_woods/victim_profiles.py",
     title="Victim Profiles",
@@ -38,7 +33,6 @@ gambolini_family_profiles = st.Page(
 MUIR_WOODS_DIRECTORY: dict[str, list] = {
     "Muir Woods Mystery": [
         muir_woods_about,
-        muir_woods_surroundings,
         muir_woods_geography,
         muir_woods_victim_profiles,
         muir_woods_news,
