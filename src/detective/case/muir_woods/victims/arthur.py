@@ -14,7 +14,7 @@ def get_arthur_data():
     st.json(
         {
             "Occupation": "Financial Analyst",
-            "Marital Status": "Married to Emily Brane",
+            "Marital Status": "Married to Emily Brane.",
             "Children": "None",
             "Last Known Whereabouts": "CCTV Footage walking into the woods with Marco Sangrevo",
         }
@@ -25,14 +25,16 @@ def get_arthur_data():
             """
         - **Personality:** Arthur was a confident and sociable man, well-liked by his colleagues and known for his ability to connect with others.
 
-        - **Recent Behavior:** Over the past few weeks, Arthur had become increasingly troubled. His wife, Emily, noted that he had been spending more time alone, often anxious in thought, and seemed preoccupied with something he wouldn’t discuss. Despite her attempts to reach out to him, Arthur remained distant, leaving her concerned but unaware of the true nature of his worries.
+        - **Family**: Arthur was married to Emily Brane, a relationship that had been a constant in his life since college. They had no children. Arthur was raised by Foster parents.
+
+        - **Recent Behavior:** Over the past week, Arthur had become increasingly troubled. His wife, Emily, noted that he had been spending more time alone, often anxious in thought, and seemed preoccupied with something he wouldn’t discuss. Despite her attempts to reach out to him, Arthur remained distant, leaving her concerned but unaware of the true nature of his worries.
         """
         )
 
     with st.expander("### Coroner's Report"):
         st.caption("### Cause of Death")
         st.error(
-            "Asphyxiation, likely due to strangulation. The victim's neck showed signs of bruising and ligature marks consistent with manual strangulation."
+            "Asphyxiation, likely due to strangulation. High tracheal bruising."
         )
 
         st.caption("### Details on Time of Death")
@@ -74,7 +76,7 @@ def get_arthur_data():
             We’ve had our share of struggles, like any couple, but we’ve always 
             come through stronger. 
             That’s why it’s been so hard to see him like this lately.
-            Over the past few weeks, he seemed different—distant, distracted. 
+            Over the past week, he seemed different—distant, distracted. 
             I could tell something was weighing on him, but every time I asked, 
             he would just say it was work stress.
 
@@ -96,6 +98,7 @@ def get_arthur_data():
 
                 ```
                 “Emily, there are things I need to face—things I should have told you long ago. 
+                Things that has been a part of me since I was born, wherever that was.
 
                 I’ve been wrestling with this for years, and now I fear it’s too late to make things right. 
 
@@ -123,7 +126,7 @@ def get_arthur_data():
             },
             {
                 "Time of Call": "10:50 AM",
-                "Caller ID": "E. Winters (Friend)",
+                "Caller ID": "B. Fett (Friend)",
                 "Phone Number": "(415) 555-8765",
                 "Duration": "Missed Call",
                 "Call Type": "Incoming",

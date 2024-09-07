@@ -10,7 +10,7 @@ def get_melanie_data():
     origin_location.metric("Origin", "Corte Madera, CA")
 
     st.caption("Cause of Death")
-    st.error("Shot Dead in the Head")
+    st.error("Shot dead in the head. Likely committed suicide")
 
     st.json(
         {
@@ -28,9 +28,7 @@ def get_melanie_data():
 
         - **Personality:** Melanie was a strong-willed and independent woman. She was confident in her abilities and wasn’t afraid to speak her mind, whether in a professional setting or in her personal life.
 
-        - **Hobbies:** Melanie enjoyed outdoor activities, particularly hiking and photography. She often combined these interests with her work, using her time in nature to decompress and reflect on her projects. She was also an amateur photographer, and her social media was filled with pictures of the various places she visited for work.
-
-        - **Relationships:** Melanie was close to a small circle of friends, but she kept her personal life private. She was single and had no immediate family in the area. Those who knew her described her as fiercely independent, with a strong sense of purpose and direction in life.
+        - **Relationships:** Melanie was close to a small circle of friends, but she kept her personal life private. She was single and had no immediate family in the area. Those who knew her described her as fiercely independent, with a strong sense of purpose and direction in life. She was raised by a single mother who passed away due to natural causes just as she was getting started with her career. It left a huge blow on her, also leaving her consultancy in need of financial backing, and making her more responsible to herself.
         """
         )
 
@@ -39,15 +37,14 @@ def get_melanie_data():
             """
             - **Friend's Statement:** A close friend of Melanie’s provided the following statement:
             
-                   - “Melanie was always so sure of herself. She knew what she wanted in life and went after it without hesitation. She was in a really good place, both personally and professionally, so the news of her death just doesn’t make sense. She wasn’t the type to take risks on the trail—she knew what she was doing out there. It feels like there’s something we’re missing.”
-                   
-                   """
+                - “Melanie was always so sure of herself. She knew what she wanted in life and went after it without hesitation. She was in a really good place, both personally and professionally, so the news of her death just doesn’t make sense. She wasn’t the type to take risks on the trail—she knew what she was doing out there. It feels like there’s something we’re missing.”       
+            """
         )
 
     with st.expander("### Coroner's Report"):
         st.caption("### Cause of Death")
         st.error(
-            "Melanie Sanders was found shot dead in the head. The bullet wound was consistent with a low-caliber weapon, shot from a distance of approximately 100 yards"
+            "Melanie Sanders was found shot dead in the head. The bullet wound was consistent with an unmarked high-caliber pistol, found in her arms. The angle of entry and exit suggests that the shot was self-inflicted."
         )
 
         st.caption("### Details on Time of Death")

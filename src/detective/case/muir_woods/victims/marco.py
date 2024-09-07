@@ -26,7 +26,7 @@ def get_marco_data():
             """
             - **Height:** 6'1"
             - **Build:** Muscular, with a disciplined physique
-            - **Distinctive Features:** Small scar under his left eye, a remnant from a training accident. A tattoo of his former unit’s insignia on his right shoulder.
+            - **Distinctive Features:** Small scar under his left eye, a remnant from a training accident. A tattoo of his former unit’s insignia on his lower right neck overlapping with the upper chest / torso.
             """
         )
         st.caption(
@@ -69,7 +69,9 @@ def get_marco_data():
         st.caption("### Details on Time of Death")
         st.caption(
             """
-            Autopsy suggests that Marco and Arthur were killed within minutes of each other. It's not possible to determine who died first from biological evidence.
+            - Autopsy suggests that Marco and Arthur were killed within minutes of each other. 
+            - It's not possible to determine who died first from biological evidence.
+            - Marco had heavy bruising on his left cheekbone. Bruise is fresh, not more than two weeks old. Consistent with a heavy blunt force to the face, by a bluntly sharp object. Minor nerve damage at the site of the bruise.
         """
         )
 
@@ -100,8 +102,9 @@ def get_marco_data():
             The following note was found crumpled inside Sid's socks. The ink has been smeared due to the mist, and holes in the paper make it hard to read. The note reads:
 
             ```
-            …...et at… overlook … no later th… PM… n..w tar...s
-            …will not a ain… ust be d..n… t muc… at st… ……an…e S……er…s & ..rth… ……an…e
+            …...et at… overlook … no later th… PM… 
+            …will not a ain… ust be d..n… t muc… at st… 
+            k..y tar...s …re ……an…e S……er…s & ..rth… ……an…e
             S.  G……oli…
             ```
             """

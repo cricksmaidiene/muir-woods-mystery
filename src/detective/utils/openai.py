@@ -30,10 +30,6 @@ def get_openai_full_response(
     prompt: str,
     system_prompt: str | None = None,
 ) -> str:
-    # Set the OpenAI API key
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-    # Create a completion using the chat model
-
     openai_messages = []
 
     if system_prompt:
@@ -42,12 +38,17 @@ def get_openai_full_response(
     openai_messages.append({"role": "user", "content": prompt})
 
     try:
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("No OpenAI API key found.")
+        
+        client = OpenAI(api_key=api_key)
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=openai_messages,
         )
         return response.choices[0].message.content
-    except AuthenticationError:
+    except (AuthenticationError, ValueError):
         st.error(
             "Authentication error. Please make sure that you have set your OpenAI API key in the `About` page."
         )
