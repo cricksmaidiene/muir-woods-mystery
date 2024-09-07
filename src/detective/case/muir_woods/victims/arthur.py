@@ -1,9 +1,6 @@
 """Arthur Brane's victim profile data"""
 
 import streamlit as st
-import pandas as pd
-import plotly.express as px
-import numpy as np
 
 
 def get_arthur_data():
@@ -35,7 +32,7 @@ def get_arthur_data():
     with st.expander("### Coroner's Report"):
         st.caption("### Cause of Death")
         st.error(
-            "Asphyxiation, likely due to strangulation. The victim's neck showed signs of bruising and ligature marks consistent with manual strangulation." 
+            "Asphyxiation, likely due to strangulation. The victim's neck showed signs of bruising and ligature marks consistent with manual strangulation."
         )
 
         st.caption("### Details on Time of Death")

@@ -88,42 +88,51 @@ r = pdk.Deck(
 # Main Call
 
 st.markdown("# Muir Woods - Surrounding Towns and Estates")
-st.caption("A map of the surrounding towns and estates of Muir Woods, with locations of victim deaths marked.")
+st.caption(
+    "A map of the surrounding towns and estates of Muir Woods, with locations of victim deaths marked."
+)
 st.pydeck_chart(r)
 
 st.dataframe(pd.DataFrame(victim_death_locations))
 
-# with open("src/detective/docs/muir_woods/surroundings.md") as f:
-#     st.markdown(f.read())
-
 st.subheader("Mill Valley")
 st.info("Population: 14,000")
-st.caption("""
+st.caption(
+    """
     Mill Valley is the closest town to Muir Woods, located just a few miles southeast. 
     It's a small, affluent town known for its picturesque streets, upscale homes, and proximity to nature.
     Many visitors to Muir Woods stay in or pass through Mill Valley. 
     It’s a hub for those seeking both outdoor adventure and a quiet, small-town atmosphere.
-""")
+"""
+)
 
 st.subheader("Sausalito")
 st.info("Population: 7,000")
-st.caption("""
+st.caption(
+    """
     Sausalito is a historic waterfront town, known for its houseboats and artists. 
     It’s a popular tourist destination and offers ferry connections to San Francisco
-""")
+"""
+)
 
 st.subheader("Corte Madera and Larkspur")
 st.info("Population: 20,000")
-st.caption("""
+st.caption(
+    """
     These neighboring towns offer a more suburban feel, with shopping centers and residential areas. 
     They serve as quieter alternatives to the busier areas closer to San Francisco.
-""")
+"""
+)
 
 st.subheader("Private Estates in the Conservatory Area")
-st.success("Bradham Foley, Flannery Mines & Grounds, Sequoia Trust & Co, Gambolini Estates, Bellingham Estates, Bergenthal Pines")
-st.caption("""
+st.success(
+    "Bradham Foley, Flannery Mines & Grounds, Sequoia Trust & Co, Gambolini Estates, Bellingham Estates, Bergenthal Pines"
+)
+st.caption(
+    """
     Over the years, several wealthy families (billionaire status) have built estates on the outskirts of the conservatory, 
     taking advantage of the seclusion and natural beauty. 
     These estates are often hidden from view, accessible only by private roads that wind through the dense forest.
     We've not carried out any inquiries at the estates if they heard / saw anything about the deaths yet. Estates are unmarked on the map.
-""")
+"""
+)

@@ -92,7 +92,9 @@ def get_daniel_data():
         )
 
     with st.expander("### Daniel's Radio Logs"):
-        st.caption("Daniel used a short-wave radio to communicate with other enthusiasts. The radio logs are based on receiving stations' records. Radios are especially useful in areas with poor cell reception. Double click a message to read more.")
+        st.caption(
+            "Daniel used a short-wave radio to communicate with other enthusiasts. The radio logs are based on receiving stations' records. Radios are especially useful in areas with poor cell reception. Double click a message to read more."
+        )
         # Creating a dataframe from the provided markdown data
         radio_logs = pd.DataFrame(
             {
@@ -155,19 +157,25 @@ def get_daniel_data():
                     width="small",
                     min_value=0,
                     max_value=5,
-                    format="%d"
+                    format="%d",
                 ),
-                "Conversation Summary": st.column_config.TextColumn("Conversation Summary", width="large"),
+                "Conversation Summary": st.column_config.TextColumn(
+                    "Conversation Summary", width="large"
+                ),
             },
             hide_index=True,
         )
 
         st.caption("Final signal from radio logs before losing connection:")
-        st.audio("https://cdn.pixabay.com/download/audio/2023/01/29/audio_1b1bbc3316.mp3?filename=sos-signal-137144.mp3", loop=True)
+        st.audio(
+            "https://cdn.pixabay.com/download/audio/2023/01/29/audio_1b1bbc3316.mp3?filename=sos-signal-137144.mp3",
+            loop=True,
+        )
 
-    
     with st.expander("### Daniel's Heart Rate"):
-        st.warning("The initial heart rates are consistent with heavy exercise, followed by a sudden spike which could is consistent with shock and rise in adrenaline.")
+        st.warning(
+            "The initial heart rates are consistent with heavy exercise, followed by a sudden spike which could is consistent with shock and rise in adrenaline."
+        )
 
         @st.cache_data
         def get_daniel_heart_rate() -> pd.DataFrame:
@@ -193,14 +201,16 @@ def get_daniel_data():
 
             # Combine the data
             time_index = time_index.append(fight_duration).append(blank_time)
-            heart_rates = np.concatenate([heart_rates, fight_heart_rates, blank_heart_rate])
+            heart_rates = np.concatenate(
+                [heart_rates, fight_heart_rates, blank_heart_rate]
+            )
 
             # Create the DataFrame
             daniel_heart_rate_df = pd.DataFrame(
                 {"Time": time_index, "Heart Rate (bpm)": heart_rates}
             )
             return daniel_heart_rate_df
-        
+
         st.write(
             px.line(
                 get_daniel_heart_rate(),

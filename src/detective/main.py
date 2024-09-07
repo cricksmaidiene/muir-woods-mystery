@@ -1,11 +1,15 @@
 import streamlit as st
-from detective.config import PHASE_2_UNLOCKED
 
 
 muir_woods_about = st.Page(
     "case/muir_woods/about.py",
     title="About",
     icon=":material/info:",
+)
+muir_woods_lestrade = st.Page(
+    "case/muir_woods/lestrade.py",
+    title="D.I Lestrade",
+    icon=":material/chat_bubble_outline:",
 )
 muir_woods_geography = st.Page(
     "case/muir_woods/geography.py",
@@ -24,25 +28,16 @@ muir_woods_news = st.Page(
 )
 
 
-gambolini_family_profiles = st.Page(
-    "case/gambolini_family/family_profiles.py",
-    title="Gambolini Family Profiles",
-    icon=":material/face:",
-)
-
 MUIR_WOODS_DIRECTORY: dict[str, list] = {
     "Muir Woods Mystery": [
         muir_woods_about,
+        muir_woods_lestrade,
         muir_woods_geography,
         muir_woods_victim_profiles,
         muir_woods_news,
     ],
 }
-GAMBOLINI_DIRECTORY: dict[str, list] = {"Gambolini Family": [gambolini_family_profiles]}
 
 pg = st.navigation({**MUIR_WOODS_DIRECTORY})
-
-if PHASE_2_UNLOCKED:
-    pg = st.navigation({**MUIR_WOODS_DIRECTORY, **GAMBOLINI_DIRECTORY})
 
 pg.run()

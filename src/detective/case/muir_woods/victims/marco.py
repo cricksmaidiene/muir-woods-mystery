@@ -17,7 +17,7 @@ def get_marco_data():
             "Occupation": "Former Police Officer (Dishonorably Discharged)",
             "Marital Status": "Single, no known family",
             "Children": None,
-            "Last Known Whereabouts": None
+            "Last Known Whereabouts": None,
         }
     )
 
@@ -106,4 +106,3 @@ def get_marco_data():
             ```
             """
         )
-

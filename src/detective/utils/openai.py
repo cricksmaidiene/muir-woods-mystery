@@ -1,14 +1,14 @@
 """A list of utility functions for interacting with the OpenAI API in Streamlit applications."""
 
-from config import OPENAI_API_KEY
-from openai import OpenAI
+import os
+from openai import OpenAI, AuthenticationError
 import streamlit as st
 from typing import Generator
 
 
-def get_openai_stream_response(prompt: str, api_key: str = OPENAI_API_KEY) -> Generator:
+def get_openai_stream_response(prompt: str) -> Generator:
     # Set the OpenAI API key
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
     # Create a completion using the chat model
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -27,10 +27,11 @@ def get_openai_stream_response(prompt: str, api_key: str = OPENAI_API_KEY) -> Ge
 
 
 def get_openai_full_response(
-    prompt: str, system_prompt: str | None = None, api_key: str = OPENAI_API_KEY
+    prompt: str,
+    system_prompt: str | None = None,
 ) -> str:
     # Set the OpenAI API key
-    client = OpenAI(api_key=api_key)
+    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
     # Create a completion using the chat model
 
     openai_messages = []
@@ -40,12 +41,16 @@ def get_openai_full_response(
 
     openai_messages.append({"role": "user", "content": prompt})
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=openai_messages,
-    )
-
-    return response.choices[0].message.content
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=openai_messages,
+        )
+        return response.choices[0].message.content
+    except AuthenticationError:
+        st.error(
+            "Authentication error. Please make sure that you have set your OpenAI API key in the `About` page."
+        )
 
 
 def chat_with(chat_id: str, prompt: str, system_prompt: str, chat_avatar: str):
@@ -70,12 +75,12 @@ def chat_with(chat_id: str, prompt: str, system_prompt: str, chat_avatar: str):
 
         # Get response from OpenAI
         response = get_openai_full_response(prompt=prompt, system_prompt=system_prompt)
-
-        # Display assistant response in chat message container
-        with st.chat_message(chat_id.title(), avatar=chat_avatar):
-            st.markdown(response)
-        # Add assistant response to chat history
-        chat_messages.append({"role": chat_avatar, "content": response})
+        if response:
+            # Display assistant response in chat message container
+            with st.chat_message(chat_id.title(), avatar=chat_avatar):
+                st.markdown(response)
+            # Add assistant response to chat history
+            chat_messages.append({"role": chat_avatar, "content": response})
 
     # Update the session state with the modified chat messages
     setattr(st.session_state, chat_id, chat_messages)

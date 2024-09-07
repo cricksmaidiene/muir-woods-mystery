@@ -17,7 +17,7 @@ def get_tony_berg_data():
             "Occupation": "Staff software engineer at Databricks.",
             "Marital Status": "Single",
             "Children": None,
-            "Last Known Whereabouts": None
+            "Last Known Whereabouts": None,
         }
     )
 
@@ -38,7 +38,9 @@ def get_tony_berg_data():
 
     with st.expander("### Coroner's Report"):
         st.caption("### Cause of Death")
-        st.error("Poisoning due to high levels of formic acid in bloodstream and digestive tracts.")
+        st.error(
+            "Poisoning due to high levels of formic acid in bloodstream and digestive tracts."
+        )
 
         st.caption("### Details on Time of Death")
         st.caption(
@@ -53,7 +55,8 @@ def get_tony_berg_data():
         )
 
     with st.expander("### Tony's Investigation Log"):
-        st.markdown("""
+        st.markdown(
+            """
 | **Date**      | **Entry Summary**                                                                                         | **Details**                                                                                           |
 |---------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | 7 days ago    | "I can’t shake the feeling that Sarah’s death wasn’t an accident."                                         | Noticed a bruise on Sarah's elbow in the coroner's photos. The placement seems odd for a simple fall. The investigators say she would have need to hit it against a very hard object, but the location of the bruise is uncommon.  |
@@ -61,4 +64,5 @@ def get_tony_berg_data():
 | 3 days ago    | "Visited the morgue—got an opinion from someone who knows."                                                | Spoke with a morgue assistant who unofficially confirmed that the bruise looks like it came from a struggle, not a fall. She would have had to fall backwards on her elbow right on some rocks, or otherwise have "elbowed" someone (probably on the bone) for there to be bruising such as this. Tony is now convinced Sarah was force-drowned. |
 | 1 day ago     | "Retracing her steps—there’s something I’m missing."                                                      | Followed Sarah’s last hiking route, noting possible ambush points. He feels close to finding more evidence. |
 | Day of Death  | "Heading back to the woods one last time. If I’m right, someone made sure she wouldn’t make it out alive." | Final entry before his death, believes he’s found enough to prove Sarah was murdered.                   |
-                    """)
+                    """
+        )

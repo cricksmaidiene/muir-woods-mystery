@@ -17,7 +17,7 @@ def get_sarah_data():
             "Occupation": "Astrophysicist & Applied Mathematics PhD at University of California, Berkeley",
             "Marital Status": "Single",
             "Children": None,
-            "Last Known Whereabouts": None
+            "Last Known Whereabouts": None,
         }
     )
 
@@ -64,72 +64,74 @@ def get_sarah_data():
         )
 
     with st.expander("### Sarah's Social Media Feed"):
-        st.caption("Sarah was a bit of a social media mini-celebrity in the science community. Here are some of her recent posts:")
+        st.caption(
+            "Sarah was a bit of a social media mini-celebrity in the science community. Here are some of her recent posts:"
+        )
         social_media_data = [
             {
                 "Time of Post": "14 days ago",
                 "Post Caption": "Just published my latest paper on exoplanets! Feeling grateful for the support from my colleagues at Berkeley. 🌟🚀",
                 "Comments Summary": "Congratulatory comments from colleagues and friends.",
-                "Image": "https://images.unsplash.com/photo-1532153955177-f59af40d6472?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                "Image": "https://images.unsplash.com/photo-1532153955177-f59af40d6472?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             },
             {
                 "Time of Post": "13 days ago",
                 "Post Caption": "Nothing like stargazing to clear the mind. The universe is endless, and it's beautiful. ✨🌌",
                 "Comments Summary": "Comments about how stunning the photo is, suggestions for new stargazing spots.",
-                "Image": "https://plus.unsplash.com/premium_photo-1661277679965-9db1104e890f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWlsa3klMjB3YXl8ZW58MHx8MHx8fDA%3D"
+                "Image": "https://plus.unsplash.com/premium_photo-1661277679965-9db1104e890f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWlsa3klMjB3YXl8ZW58MHx8MHx8fDA%3D",
             },
             {
                 "Time of Post": "10 days ago",
                 "Post Caption": "Work can be exhausting, but there's always time for a quick hike. Thinking of heading to Muir Woods this weekend. 🌲🍃",
                 "Comments Summary": "Friends recommending trails and asking to join.",
-                "Image": "https://images.unsplash.com/photo-1528306606980-c7b093f99f21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVpciUyMHdvb2RzfGVufDB8fDB8fHww"
+                "Image": "https://images.unsplash.com/photo-1528306606980-c7b093f99f21?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVpciUyMHdvb2RzfGVufDB8fDB8fHww",
             },
             {
                 "Time of Post": "7 days ago",
                 "Post Caption": "Sausalito sunsets never get old. 🌅 I miss this view when I'm at Berkeley.",
                 "Comments Summary": "Comments from locals reminiscing about Sausalito and favorite spots.",
-                "Image": "https://live.staticflickr.com/5204/5325951063_ae2230e343_b.jpg"
+                "Image": "https://live.staticflickr.com/5204/5325951063_ae2230e343_b.jpg",
             },
             {
                 "Time of Post": "5 days ago",
                 "Post Caption": "Excited to finally take a break and spend a day in nature. Thinking of hitting the trail tomorrow morning. Anyone have suggestions for a good hike?",
                 "Comments Summary": "Recommendations for Muir Woods, with some comments suggesting specific spots like the creek area.",
-                "Image": "https://plus.unsplash.com/premium_photo-1711255560433-60dafe53f76d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFpbnklMjB3b29kc3xlbnwwfHwwfHx8MA%3D%3D"
+                "Image": "https://plus.unsplash.com/premium_photo-1711255560433-60dafe53f76d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmFpbnklMjB3b29kc3xlbnwwfHwwfHx8MA%3D%3D",
             },
             {
                 "Time of Post": "4 days ago",
                 "Post Caption": "Nature day! Heading to Muir Woods for a solo hike. Plan to start at the main trailhead and loop around the creek—should be peaceful. 🌿",
                 "Comments Summary": "Comments wishing her a good hike, suggesting she check out certain overlooks along the way.",
-                "Image": "https://plus.unsplash.com/premium_photo-1690574169354-d6cc4299cf84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww"
+                "Image": "https://plus.unsplash.com/premium_photo-1690574169354-d6cc4299cf84?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww",
             },
             {
                 "Time of Post": "3 days ago",
                 "Post Caption": "Another beautiful night in Sausalito. I needed this after a long day.",
                 "Comments Summary": "Supportive comments, friends asking if she’s okay.",
-                "Image": "https://images.unsplash.com/photo-1631258578554-75acc38b6f99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2F1c2FsaXRvJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D"
+                "Image": "https://images.unsplash.com/photo-1631258578554-75acc38b6f99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2F1c2FsaXRvJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D",
             },
             {
                 "Time of Post": "2 days ago",
                 "Post Caption": "Back to work at Berkeley tomorrow, but tonight, it's all about the stars. 🌠",
                 "Comments Summary": "Comments about how peaceful her stargazing looks in other posts, people asking about her research.",
-                "Image": "https://images.unsplash.com/photo-1671709362458-53c8354565b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVya2VsZXl8ZW58MHx8MHx8fDA%3D"
+                "Image": "https://images.unsplash.com/photo-1671709362458-53c8354565b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVya2VsZXl8ZW58MHx8MHx8fDA%3D",
             },
             {
                 "Time of Post": "1 day ago",
                 "Post Caption": "So grateful for the simple moments. Sometimes, a quiet night in Sausalito is all you need.",
                 "Comments Summary": "Friends commenting on how cozy it looks, asking for book recommendations.",
-                "Image": "https://plus.unsplash.com/premium_photo-1679404108270-71b22febf4f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9vayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D"
+                "Image": "https://plus.unsplash.com/premium_photo-1679404108270-71b22febf4f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9vayUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
             },
             {
                 "Time of Post": "Day of Death",
                 "Post Caption": "Off to explore the trails again today. Starting at the creek trail—should be a quiet hike. 🌲",
                 "Comments Summary": "Comments suggesting scenic spots along the trail, wishing her a peaceful hike.",
-                "Image": "https://images.unsplash.com/photo-1472740378865-80aab8e73251?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVpciUyMHdvb2RzfGVufDB8fDB8fHww"
-            }
+                "Image": "https://images.unsplash.com/photo-1472740378865-80aab8e73251?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVpciUyMHdvb2RzfGVufDB8fDB8fHww",
+            },
         ]
 
-        st.dataframe(social_media_data, hide_index=True, column_config={
-            "Image": st.column_config.ImageColumn("Image")
-        })
-
-
+        st.dataframe(
+            social_media_data,
+            hide_index=True,
+            column_config={"Image": st.column_config.ImageColumn("Image")},
+        )
