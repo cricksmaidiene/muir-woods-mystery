@@ -26,6 +26,11 @@ muir_woods_news = st.Page(
     title="News",
     icon=":material/article:",
 )
+muir_woods_submission = st.Page(
+    "case/muir_woods/submit_findings.py",
+    title="Submit Findings",
+    icon=":material/assignment_turned_in:",
+)
 
 
 MUIR_WOODS_DIRECTORY: dict[str, list] = {
@@ -35,6 +40,7 @@ MUIR_WOODS_DIRECTORY: dict[str, list] = {
         muir_woods_geography,
         muir_woods_victim_profiles,
         muir_woods_news,
+        muir_woods_submission,
     ],
 }
 

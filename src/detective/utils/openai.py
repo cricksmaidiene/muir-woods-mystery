@@ -29,6 +29,7 @@ def get_openai_stream_response(prompt: str) -> Generator:
 def get_openai_full_response(
     prompt: str,
     system_prompt: str | None = None,
+    model: str = "gpt-4o-mini",
 ) -> str:
     openai_messages = []
 
@@ -44,7 +45,7 @@ def get_openai_full_response(
         
         client = OpenAI(api_key=api_key)
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model=model,
             messages=openai_messages,
         )
         return response.choices[0].message.content
