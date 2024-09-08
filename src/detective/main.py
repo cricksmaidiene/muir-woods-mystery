@@ -1,3 +1,5 @@
+"""Main streamlit page for the detective app."""
+
 import streamlit as st
 
 

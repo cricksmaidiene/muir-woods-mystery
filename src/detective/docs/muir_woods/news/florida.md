@@ -1,4 +1,4 @@
-[`San Francisco, CA`] – A Florida man visiting the Bay Area has left locals both puzzled and entertained with his reflections on the city. Seen contemplating life near the Golden Gate Bridge, he shared his profound thoughts: "You know, San Franchésco is like Fort Lauderdale, but with more hills... and fog. Back home, our beaches stretch out flat, just like my ex's personality."
+**San Francisco, CA** – A Florida man visiting the Bay Area has left locals both puzzled and entertained with his reflections on the city. Seen contemplating life near the Golden Gate Bridge, he shared his profound thoughts: "You know, San Franchésco is like Fort Lauderdale, but with more hills... and fog. Back home, our beaches stretch out flat, just like my ex's personality."
 
 When asked about the iconic bridge, he mused, "This Golden Gate thingamabob... it's like if ol' Fort Lauderdale back home had a bridge, but it was made of you know....gold... or at least looked like it." He continued, "The people here are deep, kinda like the Atlantic back home, but colder, and not just the water."
 

@@ -1,4 +1,4 @@
-In a move that has the Silicon Valley community buzzing, these two Bay Area entrepreneurs have raised **$2M** in a pre-seed round for their start-up, `SeedmeAI.ai`. Their concept? A platform that lets users rent virtual cloud space to "farm" simulated crops, complete with NFT vegetables.
+**San Francisco, CA**: In a move that has the Silicon Valley community buzzing, these two Bay Area entrepreneurs have raised **$2M** in a pre-seed round for their start-up, `SeedmeAI.ai`. Their concept? A platform that lets users rent virtual cloud space to "farm" simulated crops, complete with NFT vegetables.
 
 Eager VCs such as Eldin One Capital headed by Rivali Ortega, Necluda Armitage Partners by Daruk Sanstorm & Yuno Bergenthal Pine, as well as the Hateno Angel Group headed by Impara & Co. have been rushing to invest, with some even outbidding the Sierra Green Fund, which is backed by Gambolini & Co., in order to secure a stake in this innovative farming venture. The company's pitch? "Why grow food in the real world when you can farm it in the cloud?"
 

@@ -33,9 +33,7 @@ def get_arthur_data():
 
     with st.expander("### Coroner's Report"):
         st.caption("### Cause of Death")
-        st.error(
-            "Asphyxiation, likely due to strangulation. High tracheal bruising."
-        )
+        st.error("Asphyxiation, likely due to strangulation. High tracheal bruising.")
 
         st.caption("### Details on Time of Death")
         st.caption(
@@ -196,7 +194,4 @@ def get_arthur_data():
             },
         ]
 
-        st.dataframe(
-            call_log,
-            hide_index=True,
-        )
+        st.dataframe(call_log, hide_index=True)

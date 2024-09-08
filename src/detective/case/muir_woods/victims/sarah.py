@@ -1,4 +1,4 @@
-"""Sarah's victim profile data"""
+"""Sarah Bergenthal's victim profile data"""
 
 import streamlit as st
 
